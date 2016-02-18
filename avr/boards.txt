@@ -1,0 +1,54 @@
+menu.cpu=Processor
+
+###########################################################################
+
+casper.name=Coduino Casper (ATmega 644/1284)
+
+casper.bootloader.tool=avrdude
+casper.bootloader.unlock_bits=0x3F
+casper.bootloader.lock_bits=0x3F
+casper.build.board=AVR_MERCURY
+
+# Atmega1284P @ 16MHz w/Optiboot
+#--------------------------------------------------------
+casper.menu.cpu.1284_16b=Atmega1284P @ 16MHz w/Optiboot
+casper.menu.cpu.1284_16b.upload.tool=avrdude
+casper.menu.cpu.1284_16b.upload.maximum_size=130048
+casper.menu.cpu.1284_16b.upload.maximum_data_size=16384
+casper.menu.cpu.1284_16b.upload.speed=115200
+casper.menu.cpu.1284_16b.upload.protocol=arduino
+
+casper.menu.cpu.1284_16b.bootloader.low_fuses=0xFF
+casper.menu.cpu.1284_16b.bootloader.high_fuses=0xDE
+casper.menu.cpu.1284_16b.bootloader.extended_fuses=0xFD
+casper.menu.cpu.1284_16b.bootloader.unlock_bits=0x3F
+casper.menu.cpu.1284_16b.bootloader.lock_bits=0x0F
+casper.menu.cpu.1284_16b.bootloader.path=sun
+casper.menu.cpu.1284_16b.bootloader.file=casper/optiboot_atmega1284p.hex
+
+casper.menu.cpu.1284_16b.build.mcu=atmega1284p
+casper.menu.cpu.1284_16b.build.f_cpu=16000000L
+casper.menu.cpu.1284_16b.build.core=casper
+casper.menu.cpu.1284_16b.build.variant=casper
+
+# Atmega644P @ 16MHz w/Optiboot
+#--------------------------------------------------------
+casper.menu.cpu.644_16b=Atmega644P @ 16MHz w/Optiboot
+casper.menu.cpu.644_16b.upload.tool=avrdude
+casper.menu.cpu.644_16b.upload.maximum_size=64512
+casper.menu.cpu.644_16b.upload.maximum_data_size=4096
+casper.menu.cpu.644_16b.upload.speed=115200
+casper.menu.cpu.644_16b.upload.protocol=arduino
+
+casper.menu.cpu.644_16b.bootloader.low_fuses=0xFF
+casper.menu.cpu.644_16b.bootloader.high_fuses=0xDE
+casper.menu.cpu.644_16b.bootloader.extended_fuses=0xFD
+casper.menu.cpu.644_16b.bootloader.unlock_bits=0x3F
+casper.menu.cpu.644_16b.bootloader.lock_bits=0x0F
+casper.menu.cpu.644_16b.bootloader.path=sun
+casper.menu.cpu.644_16b.bootloader.file=casper/optiboot_atmega644p.hex
+
+casper.menu.cpu.644_16b.build.mcu=atmega644p
+casper.menu.cpu.644_16b.build.f_cpu=16000000L
+casper.menu.cpu.644_16b.build.core=casper
+casper.menu.cpu.644_16b.build.variant=casper
